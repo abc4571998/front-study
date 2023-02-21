@@ -1,6 +1,4 @@
 # module.css, useState, useEffect 공부
-Your app is ready to be deplo
-Your app is ready to be deployed!
 
 ## module.css 
 Button.module.css 와 App.module.css 파일을 만들어 js 에서 객체형태로 import 한다.
