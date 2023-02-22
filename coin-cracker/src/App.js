@@ -59,9 +59,9 @@ function App() {
             </select>
             <button>Convert</button>
           </form>
+          <h3>You can buy {value} coins!</h3>
         </div>
       )}
-      <h3>You can buy {value} coins!</h3>
     </div>
   );
 }
