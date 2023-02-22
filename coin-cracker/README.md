@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# coin API 이용하기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Fetch 이용
+- fetch("https://api.coinpaprika.com/v1/tickers")
 
-## Available Scripts
+- 다음과 같은 형태로 2500개 받아오기
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/30529101/220545598-13ead2f3-6293-496f-9876-32b54006fe14.png">
 
-In the project directory, you can run:
 
-### `npm start`
+## 사용자가 달러를 입력하고 코인을 선택하면 살 수 있는 코인을 계산할 수 있다.
+<img width="735" alt="image" src="https://user-images.githubusercontent.com/30529101/220545933-1adeeb83-6232-4358-bc36-a8dc044bfe2f.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="786" alt="image" src="https://user-images.githubusercontent.com/30529101/220546360-c9aca9f0-b252-4b04-bd5f-37e2b218409f.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## select 와 option 태그를 통해 코인 목록 만들기
+<img width="721" alt="image" src="https://user-images.githubusercontent.com/30529101/220546147-a00f0d64-6b4b-4feb-a05f-2f2e8b9bf574.png">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## API 로 코인을 받아오기 전까지는 loading 표시
+<img width="287" alt="image" src="https://user-images.githubusercontent.com/30529101/220546844-4ba57375-60cd-4c85-aa6c-9c0d137faabe.png">
