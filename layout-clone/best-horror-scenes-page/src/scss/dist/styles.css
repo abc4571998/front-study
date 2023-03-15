@@ -1,0 +1,150 @@
+.left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  width: 33%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.left-box .title {
+  font-size: 70px;
+  color: #e6473c;
+  letter-spacing: 10px;
+}
+.left-box .subtitle {
+  font-size: 25px;
+  width: 350px;
+  color: #e6473c;
+  margin-bottom: 20px;
+}
+.left-box p {
+  width: 90%;
+  font-size: 18px;
+  color: #e6473c;
+  text-align: justify;
+}
+.left-box .text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left-box .bottom-paragraph {
+  width: 90%;
+  color: #676767;
+  font-size: 11px;
+  padding: 20px 10px;
+}
+
+.connect {
+  display: flex;
+  height: 70px;
+  flex-wrap: wrap;
+}
+.connect span {
+  margin: 7px;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 1px solid #676767;
+  color: #676767;
+}
+.connect span:hover {
+  color: black;
+  cursor: pointer;
+}
+
+header {
+  margin-left: 33%;
+  position: sticky;
+  top: 0;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border-bottom: 1px solid #831d15;
+  z-index: 2;
+  background-color: #e6473c;
+}
+header a {
+  padding: 0 5px;
+  color: #831d15;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 33%;
+  position: relative;
+  z-index: 1;
+}
+
+.movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #831d15;
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) #e6473c;
+}
+.movie .wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.movie .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+}
+.movie .title span:first-child {
+  font-size: 60px;
+  font-weight: 600;
+}
+.movie .title span:last-child {
+  font-size: 18px;
+}
+.movie .media {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  border: 1px solid black;
+  box-shadow: 0 80px 80px -80px #2d0806;
+}
+.movie .subscript p {
+  color: white;
+  font-weight: 18px;
+  font-weight: 500;
+}
+.movie .subscript div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.movie .subscript div span:first-child {
+  color: white;
+}
+.movie .subscript div span:last-child {
+  color: #831d15;
+}
+.movie .bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px 0;
+  color: #831d15;
+}
