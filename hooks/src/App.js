@@ -1,6 +1,8 @@
+import { useClick } from "./useClick";
 import { useInput } from "./useInput";
 import { useTabs } from "./useTabs";
 import { useTitle } from "./useTitle";
+
 function App() {
   const maxLen = (value) => value.length < 10;
   const includeWord = (value) => !value.includes("@");
@@ -21,6 +23,11 @@ function App() {
   ];
   const { currentItem, changeItem } = useTabs(0, content);
 
+  const click = () => {
+    console.log("click");
+  };
+  const title = useClick(click);
+
   return (
     <div className="App">
       {/* useInput */}
@@ -37,6 +44,9 @@ function App() {
         </button>
       ))}
       <div>{currentItem.content}</div>
+
+      {/* useClick */}
+      <h1 ref={title}>useClick Test</h1>
     </div>
   );
 }
