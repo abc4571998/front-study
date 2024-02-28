@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Home",
 };
@@ -10,5 +12,13 @@ async function getMovies() {
 }
 export default async function HomePage() {
   const movies = await getMovies();
-  return <div>{JSON.stringify(movies)}</div>;
+  return (
+    <div>
+      {movies.map((movie) => (
+        <li key={movie.id}>
+          <Link href={`/movies/${movie.id}`}>{movie.title}</Link>
+        </li>
+      ))}
+    </div>
+  );
 }
